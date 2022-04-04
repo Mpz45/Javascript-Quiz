@@ -20,6 +20,6 @@ The user may save their score to local storage
     -all saved score can viewed in the highscores page
 
 ## Screenshots
-./Pictures/main.jpg
+![Screenshot](./Pictures/main.jpg)
 
-./Pictures.highscore.jpg
+![Screenshot](./Pictures/highscore.jpg)
