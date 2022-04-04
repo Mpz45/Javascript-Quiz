@@ -2,7 +2,7 @@
 
 This website is a timed quiz on Javascript.
 
-:Link: https://mpz45.github.io/Javascript-Quiz/
+Link: https://mpz45.github.io/Javascript-Quiz/
 
 ##Rules
 
