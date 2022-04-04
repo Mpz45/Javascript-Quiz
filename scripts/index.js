@@ -12,7 +12,7 @@ const QUESTION = document.getElementById("questions");
 const CHOICES = document.getElementById("choices");
 const CHOICE_STATUSES = document.querySelectorAll(".choice-status");
 const CORRECT = document.getElementById("correct");
-const WRONG = document.getElementById("incorrect");
+const INCORRECT = document.getElementById("incorrect");
 
 //End
 const END_SECTION = document.getElementById("end");
@@ -137,7 +137,7 @@ function styleTimeRemainingDefault() {
   TIME_REMAINING.style.color = "#4616E8";
 }
 
-function styleTimeRemainingWrong() {
+function styleTimeRemainingINCORRECT() {
   TIME_REMAINING.style.color = "#E81648";
 }
 
@@ -145,7 +145,7 @@ function checkChoice(userChoice) {
   if (isChoiceCorrect(userChoice)) {
     displayCorrectChoiceEffects();
   } else {
-    displayWrongChoiceEffects();
+    displayINCORRECTChoiceEffects();
   }
 }
 
@@ -153,14 +153,14 @@ function isChoiceCorrect(choice) {
   return choice === QUESTION_LIST[currentQuestion].indexOfCorrectChoice;
 }
 
-function displayWrongChoiceEffects() {
+function displayINCORRECTChoiceEffects() {
   deductTimeBy(10);
 
-  styleTimeRemainingWrong();
-  showElement(CHOICE_STATUSES, WRONG);
+  styleTimeRemainingINCORRECT();
+  showElement(CHOICE_STATUSES, INCORRECT);
 
   choiceStatusTimeout = setTimeout(function() {
-    hideElement(WRONG);
+    hideElement(INCORRECT);
     styleTimeRemainingDefault();
   }, 1000);
 }
