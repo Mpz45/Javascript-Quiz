@@ -19,3 +19,7 @@ The user's remaining time is their finalscore
 The user may save their score to local storage 
     -all saved score can viewed in the highscores page
 
+## Screenshots
+./Pictures/main.jpg
+
+./Pictures.highscore.jpg
