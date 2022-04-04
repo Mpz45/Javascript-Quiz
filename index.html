@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <link rel="stylesheet" href="./css/style.css">
+        <title>Javascript Code Quiz</title>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <a href="Highscores.html">HIGHSCORES</a>
+            </nav>
+        </header>
+        <main>
+            <section id="start" class="quiz">
+                <h1>Coding Quiz</h1>
+                <p>
+                    Test you knowledge of Javascript!
+                </p>
+                <p>
+                    You have <strong>60 seconds</strong> to anwser<strong>  5 multiple choice questions</strong>.
+                    Each time you get an anwser wrong, 10 seconds will be deducted.
+                </p>
+                <p>
+                    Your final score will be TBD. If the timer hits zero, game is over.
+                </p>
+                <button id="start-btn">Start</button>
+            </section>
+            <section id="quiz-questions" class="hidden quiz-section">
+                <p id="timer">Time: <span id="time-remaining">0</span></p>
+                <h1 id="questions">Question</h1>
+                <ul id="choices"></ul>
+            </section>
+            <section id="end" class="quiz-end hidden">
+                <h1 id="end-title">Quiz Completed</h1>
+                <p id="score-text">Score: <span id="score">0</span></p>
+                <form id="submit-score">
+                    <label for="initials">Enter your initials: </label>
+                    <input type="text" id="initials">
+                    <button type="submit">Submit</button>
+                    <p id="error-message"></p>
+                </form>
+                <a href="index.html" class="back-btn">Back to Quiz</a>
+                <div>
+                    <p id="correct" class="choice-status hidden">Correct!</p>
+                    <p id="incorrect" class="choice-status hidden">Incorrect!</p>
+                </div>
+            </section>
+        </main>
+        <script src="./scripts/index.js"></script>
+    </body>
+</html>
